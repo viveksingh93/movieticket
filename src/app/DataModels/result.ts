@@ -1,7 +1,7 @@
-export interface Result{
-    BookSeats:number;
+export interface Result {
+    BookedSeats:number;
     Tax:number;
     BasicPrice:number;
-    TotalPrice:number;
-    PaybleAmount:number
+    totalPrice:number;
+    PaybleAmount:number;
 }

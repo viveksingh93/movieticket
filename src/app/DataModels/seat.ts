@@ -1,5 +1,5 @@
-export interface Seat{
+export interface Seat {
     row:number;
-    Seat:number;
-    Status:string
+    col:number;
+    status:string;
 }

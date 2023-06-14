@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/movieticket",
+            "outputPath": "dist/angular-proj",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "movieticket:build:production"
+              "browserTarget": "AngularProj:build:production"
             },
             "development": {
-              "browserTarget": "movieticket:build:development"
+              "browserTarget": "AngularProj:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "movieticket:build"
+            "browserTarget": "AngularProj:build"
           }
         },
         "test": {
@@ -96,6 +96,6 @@
     }
   },
   "cli": {
-    "analytics": "8bf69c14-e47b-4837-bff5-48d76aa449e2"
+    "analytics": "73ae82bc-04c8-4550-931a-67932283032e"
   }
 }

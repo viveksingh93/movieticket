@@ -1,10 +1,10 @@
-export interface Movie{
-    BasicPrice: number;
-    MovieName: string;
-    Row:{
+export interface Movie {
+    BasicPrice:number;
+    MovieName:string;
+    Rows:{
         row:number;
-        start:number;
+        Start:number;
         End:number;
-        AlreadyBooked:number[]
+        AlreadyBooked:number[];
     }[]
 }

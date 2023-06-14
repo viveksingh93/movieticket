@@ -1,1 +1,53 @@
-<p>movies works!</p>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12" style="padding: 60px;">
+            <div class="card" >
+                <div class="card-header"  style="background: darkcyan;"> 
+                    {{movie.MovieName}}
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <h5>Select Your Seats</h5>
+                    </div>
+                    <div class="row">
+                        <table class="table table-bordered">
+                            <tbody>
+                                <tr *ngFor="let row of seats;">
+                                    <td *ngFor="let seat of row" [ngClass]="seat.status" (click)="selectSeat(seat)" >
+                                        <h5>{{seat.col}}</h5>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+<div class="row">
+    <div class="col-sm-6"  style="border: 1px;">
+    <table class="table table-bordered table-hovered">
+        <tr>
+            <td>Movie Name</td>
+            <td>{{movie.MovieName}}</td>
+        </tr>
+        <tr>
+            <td>No. Of Booked Seat</td>
+            <td>{{getBookedSeats()}}</td>
+        </tr>
+        <tr>
+            <td>Total Amount</td>
+            <td>{{getTotalAmount()}}</td>
+        </tr>
+        <tr>
+            <td>Tax </td>
+            <th>{{getTax()}}</th>
+        </tr>
+        <tr>
+            <td>Total Payable Amount	</td>
+            <td>{{getTotalPayable()}}</td>
+        </tr>
+    </table></div>
+</div></div>
